@@ -91,7 +91,8 @@ span{
 }
 button:hover span{
     width: 100%;
+    color: #000;
 }
 button:hover{
-    border: none;
+    border: #fff;
 }
