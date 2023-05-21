@@ -81,7 +81,7 @@ button{
 span{
     background: #fff;
     height: 100%;
-    width: 0%;
+    width: 0;
     border-radius: 25px;
     position: absolute;
     left: 0;
