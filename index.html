@@ -1,5 +1,21 @@
 <html>
 <head>
+<script>
+        function registerProtocolHandlers () {
+  if (typeof navigator.registerProtocolHandler !== 'function') return
+
+  const protocolWhitelist = [
+    'elux'
+  ]
+
+  const handlerUrl = window.location.href + '/url=%s'
+
+  protocolWhitelist.forEach(proto => {
+    navigator.registerProtocolHandler(proto, handlerUrl, 'EluxiumLMAOOO')
+  })
+}
+        registerProtocolHandlers()
+</script>
 <title>Eluxium Org</title>
 <link rel="stylesheet" href="style.css">
         <!DOCTYPE html>
